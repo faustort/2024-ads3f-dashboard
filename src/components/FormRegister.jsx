@@ -11,8 +11,8 @@ export default function FormRegister() {
     console.log(nome, email, senha, repetirSenha);
 
     const payload = {
-      nome,
-      email,
+      nome: nome,
+      email: email,
       senha,
     };
     const resposta = await axios.post("http://localhost:8000/user", payload);
